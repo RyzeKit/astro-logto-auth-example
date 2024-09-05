@@ -1,0 +1,29 @@
+---
+const user = Astro.locals.user;
+---
+
+<main>
+  <h1>Home</h1>
+  {
+    user ? (
+      <>
+        <a href="/protected/dashboard">
+          <button>Dashboard</button>
+        </a>
+        <form method="POST" action="/auth/logout">
+          <button>Sign Out</button>
+        </form>
+      </>
+    ) : (
+      <>
+        <a href="/auth/login">
+          <button>Login</button>
+        </a>
+
+        <a href="/auth/signup">
+          <button>Sign Up</button>
+        </a>
+      </>
+    )
+  }
+</main>
