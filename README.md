@@ -1,8 +1,16 @@
 # Astro + Logto auth example
 
-This is an example demonstrating Logto integration with Astro.
+This is an example demonstrating [Logto](https://logto.io/) integration with [Astro](https://astro.build/).
 
-Since Logto doesn't have an SDK for Astro, this example will be using Lucia Auth as the middleman between Astro and Logto.
+Since Logto doesn't have an SDK for Astro, this example will be using [Lucia Auth](https://lucia-auth.com/) as the middleman between Astro and Logto.
+
+## Features
+
+- Login
+- Sign Up
+- Logout
+- Protected Routes
+- Database ([Drizzle ORM & Postgres](https://orm.drizzle.team/docs/get-started-postgresql#postgresjs))
 
 ## Instructions
 
